@@ -131,8 +131,8 @@ h6 {
 }
 
 #app {
-  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -163,9 +163,5 @@ h6 {
 }
 
 #app .toggle-charge {
-  position: absolute;
-  transform-origin: center;
-  top: 0;
-  left: 50%;
   padding: 10px 20px;
 }
