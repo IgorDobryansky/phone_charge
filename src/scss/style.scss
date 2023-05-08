@@ -1,0 +1,32 @@
+@import "reset";
+@import "fonts";
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  .lightning {
+    clip-path: polygon(0 100%, 50% 52%, 15% 52%, 100% 0, 50% 42%, 85% 42%);
+    position: relative;
+    height: 500px;
+    background-color: pink;
+    width: 150px;
+    span{
+      text-align: center;
+      position: absolute;
+      transform-origin: center;
+      left: 40%;
+      top: 45%;
+    }
+    .charge-bar {
+      background-color: magenta;
+      width: 100%;
+      height: 0;
+      align-self: flex-end;
+    }
+  }
+  .toggle-charge {
+    padding: 10px 20px;
+  }
+}
